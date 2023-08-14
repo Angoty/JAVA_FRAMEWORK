@@ -6,8 +6,12 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.util.HashMap;
+import framework1190.map.Mapping;
 
 public class Servlet extends HttpServlet{
+
+    HashMap<String, Mapping> map = new HashMap<String, Mapping>();
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         response.setContentType("text/html;charset=UTF-8");
